@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Media extends Model {
 
+    protected $guarded = [];
     protected $appends = ['full_url', 'thumb_url'];
 
     public function productImages() {
